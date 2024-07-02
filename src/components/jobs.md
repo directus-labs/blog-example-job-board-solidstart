@@ -1,0 +1,21 @@
+  {
+    title: "Software Engineer",
+    description: "Develop and maintain web applications using modern JavaScript frameworks.",
+    location: "San Francisco, CA",
+    type: "Full-time",
+    salary: 120000,
+  },
+  {
+    title: "Marketing Manager",
+    description: "Lead marketing campaigns and strategies for a growing startup.",
+    location: "New York, NY",
+    type: "Full-time",
+    salary: 90000,
+  },
+  {
+    title: "Data Analyst",
+    description: "Analyze large datasets and create reports to drive business decisions.",
+    location: "Chicago, IL",
+    type: "Part-time",
+    salary: 65000,
+  },
