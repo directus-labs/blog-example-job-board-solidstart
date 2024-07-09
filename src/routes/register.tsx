@@ -21,7 +21,7 @@ export default function RegisterPage() {
         email: email(),
         password: password(),
       });
-      await auth.login(email(), password());
+      //await auth.login(email(), password());
       navigate("/", { replace: true });
     } catch (err) {
       console.log(err)
