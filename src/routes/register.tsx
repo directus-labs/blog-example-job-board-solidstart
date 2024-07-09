@@ -4,8 +4,6 @@ import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "@solidjs/router";
 
 export default function RegisterPage() {
-  const [first_name, setFirstName] = createSignal("");
-  const [last_name, setLastName] = createSignal("");
   const [email, setEmail] = createSignal("");
   const [password, setPassword] = createSignal("");
   const [role, setRole] = createSignal<"applicant" | "employer">("applicant");
@@ -16,8 +14,6 @@ export default function RegisterPage() {
     e.preventDefault();
     try {
      const res = await auth.register({
-        first_name: first_name(),
-        last_name: last_name(),
         email: email(),
         password: password(),
       });
@@ -31,20 +27,6 @@ export default function RegisterPage() {
 
   return (
     <form onSubmit={handleRegister}>
-      <input
-        type="text"
-        placeholder="First Name"
-        value={first_name()}
-        onInput={(e) => setFirstName(e.currentTarget.value)}
-        required
-      />
-       <input
-        type="text"
-        placeholder="Last Name"
-        value={last_name()}
-        onInput={(e) => setLastName(e.currentTarget.value)}
-        required
-      />
       <input
         type="email"
         placeholder="Email"
